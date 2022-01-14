@@ -1,0 +1,309 @@
+
+
+
+#tactical-board{
+    display:block;
+    width:900px; 
+    height:500px;
+    margin-right: auto;
+    margin-left: auto; 
+    background: black; 
+    position:relative; 
+}
+
+
+#drawingBoard{
+    position: inline-block;
+    z-index: 20;
+}
+
+#container{
+    height:600px;
+    width:1250px;
+    margin-right: auto;
+    margin-left: auto;
+    position:absolute;
+}
+
+
+body{
+    background-color: rgb(81, 192, 81);
+}
+
+h1{
+    font:30px Arial;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.team1{
+    background-color:blue;
+    top: 470px;
+    left: 250px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute; /*the top attribute only works when position is set to absolute*/
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+
+.team2{
+    background-color:rgb(232, 26, 26);
+    top:  470px;
+    left:  275px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team3{
+    background-color:black;
+    top:470px;
+    left:300px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team4{
+    background-color:orange;
+    top:470px;
+    left:325px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team5{
+    background-color:rgb(68, 237, 68);
+    top:470px;
+    left:350px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team6{
+    background-color:white;
+    top:470px;
+    left:375px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team7{
+    background-color:rgb(0, 204, 255);
+    top:470px;
+    left:400px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team8{
+    background-color:rgb(112, 5, 5);
+    top:470px;
+    left:425px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team9{
+    background-color:purple;
+    top: 470px;
+    left:450px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+.team10{
+    background-color:rgb(255, 0, 234);
+    top:470px;
+    left:475px;
+    height: 19px;
+    width: 19px;
+    border-radius: 19px;
+    position: absolute;
+    color:black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right:1px;
+}
+
+#soccerBall{
+    position: absolute;
+    top:477px;
+    left:500px;
+}
+
+#menu{
+    height:110px;
+    width: 200px;
+    background-color: rgb(192, 80, 5);
+    top:0px;
+    left:0px;
+    text-align: center;
+    position: absolute;
+    display: none;
+    z-index:3; /*specifies stack order*/
+}
+
+.input{
+    margin-top: 10px;
+    border-radius: 17px;
+    border: 0px;
+    height: 25px;
+    text-align: center;
+}
+
+#remove{
+    margin: 10px;
+    width: 150px;
+    cursor: pointer;
+    background-color: rgba(213, 164, 41, 0.96);
+    border: 1px solid black;
+}
+
+#remove:hover{
+    background-color: rgba(208, 187, 135, 0.96);;
+}
+
+
+.playerName{
+    position: absolute;
+    font:13px Arial;
+    color:black;
+}
+
+
+#draw{
+    background-color: rgb(214, 149, 26);
+    border: 0px;
+    position: absolute;
+    top: 470px;
+    left:880px;
+    cursor: pointer;
+    font: 15px Arial;
+    font-weight: bold;
+}
+
+#draw:hover{
+    background-color: rgb(221, 176, 93);
+}
+
+#drawingBoard {
+    background-image: url("https://e7.pngegg.com/pngimages/948/298/png-clipart-green-and-white-soccer-field-illustration-green-font-area-angle-pattern-soccer-field-text-rectangle.png");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    background-position: center;
+    /* height: 100%;
+    width: 100%; */
+}
+
+#clearBoard{
+    background-color: rgb(214, 149, 26);
+    border:0px;
+    position: absolute;
+    top:470px;
+    left:950px;
+    cursor:pointer;
+    font:15px Arial;
+    font-weight: bold;
+}
+
+#clearBoard:hover{
+    background-color: rgb(221, 176, 93);
+}
+
+#undoDrawnLine{
+    background-color: rgb(214, 149, 26);
+    border:0px;
+    position: absolute;
+    top:470px;
+    left:775px;
+    cursor:pointer;
+    font:15px Arial;
+    font-weight: bold;
+}
+
+#undoDrawnLine:hover{
+    background-color: rgb(221, 176, 93);
+}

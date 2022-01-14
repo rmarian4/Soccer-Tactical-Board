@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Tactical Board</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src = "custom-menu.js" defer></script>
+        <script src="tacticalBoard.js" defer></script>
+        <script src="drawFunctionality.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Tactical Board</h1>
+        <div id="container">
+
+
+            <div id="menu">
+                <input type="text" class="input" id="num" placeholder="Number" oninput="addNumber()">
+                <input type = "text" class="input" id='name' placeholder="Name" oninput="addName()">
+                <input type = "button" id = "remove" value = "remove" onclick="deleteIcon()">
+            </div>
+        
+
+            <div id="tactical-board">  
+                <canvas id="drawingBoard" height="500px" width="1000px" onmousedown="startPainting()" onmousemove="drawLine(event)" onmouseup="stopPainting()">
+                </canvas>           
+            </div>
+           
+            
+            
+            <div  class = "teams team1" id="team1icon" onmousedown="startMoving(this, 'team1icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team2" id="team2icon" onmousedown="startMoving(this, 'team2icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team3" id="team3icon" onmousedown="startMoving(this, 'team3icon','container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team4" id="team4icon" onmousedown="startMoving(this, 'team4icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team5" id="team5icon" onmousedown="startMoving(this, 'team5icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team6" id="team6icon" onmousedown="startMoving(this, 'team6icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team7" id="team7icon" onmousedown="startMoving(this, 'team7icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team8" id="team8icon" onmousedown="startMoving(this, 'team8icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team9" id="team9icon" onmousedown="startMoving(this, 'team9icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            <div  class = "teams team10" id="team10icon" onmousedown="startMoving(this,'team10icon', 'container', event)" onmouseup="stopMoving('container')"></div>
+            
+            <div id="soccerBall" onmousedown="startMoving(this, 'soccerBall', 'container', event)" onmouseup="stopMoving('container')">
+                <img src="https://cdn11.bigcommerce.com/s-5ig7x53cx8/images/stencil/1280x1280/products/2805/2671/ME-4024-Sports-Ball-Soccer-2__42273.1539612808.png?c=2" 
+                    height="12"
+                    width="12"
+                >
+            </div>
+
+            <input id="draw" type = "button" value="Draw" onclick="onButtonClick()">
+            <input id="clearBoard" type = "button" value = "Clear Board" onclick ="window.location.reload()">
+            <input id="undoDrawnLine" type = "button" value="Undo Line" onclick="undo()" >
+        
+            
+        </div>
+    </body>
+</html>
